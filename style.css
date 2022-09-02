@@ -1,0 +1,83 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primrary-color: #CE2860;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  color: var(--primrary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border: 1px solid var(--primrary-color);
+  background-color: white;
+  padding: 12px 30px;
+  border-radius: 11px;
+  font-family: symbol;
+  color: var(--primrary-color);
+  font-size: 1.3em;
+}
+
+button:nth-child(1), :nth-child(2), :nth-child(3) {
+  font-family: 'Source Code Pro', monospace;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 5px solid var(--primrary-color);
+  padding: 35px;
+  border-radius: 25px;
+}
+
+#result {
+  border: 1px solid var(--primrary-color);
+  border-radius: 11px;
+  padding: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 6px;
+}
+
+#user-input {
+  font-size: 1.3em;
+}
+
+#result input {
+  border: none;
+  width: 100%;
+  padding: 2px;
+  text-align: right;
+  font-family: symbol;
+  color: var(--primrary-color);
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+#equal {
+  grid-column: 2 / 4;
+  background-color: var(--primrary-color);
+  color: white;
+}
