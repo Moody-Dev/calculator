@@ -53,7 +53,6 @@ button:hover {
   text-align: right;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   gap: 6px;
 }
 
@@ -66,13 +65,18 @@ button:hover {
   width: 100%;
   padding: 2px;
   text-align: right;
-  font-family: symbol;
+  /* font-family: symbol; */
   color: var(--primrary-color);
+  
 }
 
-#buttons {
+#result input:disabled {
+  background-color: white;;
+}
+
+#button-container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
