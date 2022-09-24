@@ -38,8 +38,8 @@ function multiFn(prev, next) {
 
 function operate(operator, prev, next) {
   operator = signValue;
-  // prev = prevValue;
-  // next = nextValue;
+  prev = prevValue;
+  next = nextValue;
 }
 
 let userValue = null;
@@ -48,6 +48,7 @@ let nextValue = null;
 let operatorValue = null;
 userInput.value = null;
 userHistory.value = null;
+
 
 for (const button of buttons) {
   button.addEventListener('click', (e) => {
@@ -58,7 +59,6 @@ for (const button of buttons) {
   })
 }
 // console.log(this.operatorValue)
-
 
 for (const sign of symbols) {
   sign.addEventListener('click', (e) => {

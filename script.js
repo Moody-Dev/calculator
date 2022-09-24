@@ -77,6 +77,9 @@ for (const button of buttons) {
     return setValue;
   })
 }
+
+
+
 // console.log(userValue)
 
 // add.addEventListener('click', addFn);
@@ -86,31 +89,27 @@ for (const button of buttons) {
 
 
 
-for (const sign of symbols) {
-  sign.addEventListener('click', (e) => {
-    const getValue = e.currentTarget.textContent;
-    // console.log(getValue)
-    // const getValue = userHistory.value += userInput.value + e.currentTarget.textContent;
-    // userInput.value = '';
-    // console.log(sign.textContent);
-    switch (true) {
-      case getValue === '+':
-        console.log('Sign Value is: ' + getValue + '+');
-        return addFn(getValue);
-      // break;
-      case getValue === '-':
-        console.log('Sign Value is: ' + sign.textContent + '-');
-        return subFn(getValue);
-      case getValue === '/':
-        console.log('Sign Value is: ' + sign.textContent + '/');
-        return divideFn(getValue);
-      case getValue === '*':
-        console.log('Sign Value is: ' + sign.textContent + '*');
-        return multiFn(getValue);
-    }
-    // return getValue;
-  })
-}
+// for (const sign of symbols) {
+//   sign.addEventListener('click', (e) => {
+//     const getValue = e.currentTarget.textContent;
+//     switch (true) {
+//       case getValue === '+':
+//         console.log('Sign Value is: ' + getValue + '+');
+//         return addFn(getValue);
+//       // break;
+//       case getValue === '-':
+//         console.log('Sign Value is: ' + sign.textContent + '-');
+//         return subFn(getValue);
+//       case getValue === '/':
+//         console.log('Sign Value is: ' + sign.textContent + '/');
+//         return divideFn(getValue);
+//       case getValue === '*':
+//         console.log('Sign Value is: ' + sign.textContent + '*');
+//         return multiFn(getValue);
+//     }
+//     // return getValue;
+//   })
+// }
 
 
 
